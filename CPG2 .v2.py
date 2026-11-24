@@ -49,7 +49,7 @@ while True:
     ans = input("Do you wanna play the game? (Y/N): ").upper()
 
     if ans == "Y":
-        # Fresh objects every round so stats reset if you play again
+        
         player = Player()
 
         candidate1 = ChillGirl(
@@ -85,7 +85,7 @@ while True:
         print("--- Candidate 3 ---")
         candidate3.show_profile()
 
-        # 1. Pick your candidate
+        
         while True:
             ans2 = input("Please enter which candidate to choose as your partner!!! (1/2/3): ")
             if ans2 == "1":
@@ -104,7 +104,7 @@ while True:
         print(f"You locked in {chosen_girl.first_name}! Let's see how the next 5 days go...")
         print("--------------------------------------------------------------")
 
-        # 2. 5-Day Relationship Loop
+        
         for day in range(1, 6):
             print(f"\n--- DAY {day} | Money: ₱{player.money} | Mental: {player.mental_health}% | Affection: {chosen_girl.affection}/100 ---")
             print("1. Take her out (-₱300) | 2. Text / Hang out (Free) | 3. Grind / Hoop (+Mental)")
